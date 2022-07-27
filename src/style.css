@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .board-layout {
   display: flex;
   flex-direction: row;
@@ -29,11 +30,10 @@
   box-shadow: 0 4px 5px;
   cursor: pointer;
   background-color: #fff;
-  
 }
 
 .header-score {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .form-section {
@@ -65,7 +65,7 @@
 }
 
 .p:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 .display-score p {
