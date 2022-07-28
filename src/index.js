@@ -1,12 +1,51 @@
 /* eslint-disable max-classes-per-file */
 
 import './style.css';
-import Leaderboard from './modules/leaderboard.js';
-import UI from './modules/ui.js'
+import { createGame, createUserData, getUserEntry } from './modules/leaderboardApi.js';
 
-// class UI
+// Displaying Scores
+const refreshBtn = document.getElementById('refresh-btn');
 
-// Display Events
-document.addEventListener('DOMContentLoaded', UI.displayLearderboard);
+const showScores = async () => {
+  const displayScores = document.getElementById('display-scores');
+
+  while (displayScores.firstChild) {
+    displayScores.removeChild(displayScores.firstChild);
+  }
+
+  const userEntry = await getUserEntry();
+
+  userEntry.result.forEach((entry) => displayScores.insertAdjacentHTML('beforeend', `
+    <div id="display-score">
+    <p>${entry.user}:</p>
+    <p> ${entry.score}</p>
+    </div>  
+  `));
+};
+
+refreshBtn.addEventListener('click', showScores);
+
+const userDataSubmit = document.getElementById('add-score');
+
+userDataSubmit.addEventListener('click', async () => {
+  let userName = document.getElementById('user-name').value;
+  let userScore = document.getElementById('user-score').value;
+  if (userName !== '' && userScore !== '') {
+    const data = {
+      user: userName,
+      score: userScore,
+    };
+
+    await createUserData(data);
+
+    userName = '';
+    userScore = '';
+  }
+  showScores();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    showScores();
+});
 
 /* eslint-disable max-classes-per-file */

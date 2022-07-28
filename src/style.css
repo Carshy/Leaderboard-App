@@ -27,9 +27,20 @@
   height: 10%;
   float: right;
   border: 2px solid #000;
-  box-shadow: 0 4px 5px;
+  box-shadow: 2px 5px;
   cursor: pointer;
   background-color: #fff;
+  outline: none;
+}
+
+#display-score {
+  display: flex;
+  height: 30px;
+  padding: 10px 0 27px 10px;
+}
+
+#display-score:nth-child(even) {
+  background-color: #e2dede;
 }
 
 .header-score {
@@ -46,28 +57,15 @@
   width: 37%;
   float: right;
   border: 2px solid #000;
-  box-shadow: 0 4px 5px;
+  box-shadow: 2px 5px;
   margin-left: 63%;
   background-color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 .show-scores {
-  border: 2px solid #000;
+  border: 1.5px solid #000;
   background-color: #fff;
   width: 220px;
-}
-
-.display-score {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
-
-.p:nth-child(even) {
-  background-color: #ddd;
-}
-
-.display-score p {
-  padding-left: 4px;
 }
