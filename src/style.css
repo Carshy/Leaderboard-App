@@ -4,15 +4,26 @@
   box-sizing: border-box;
 }
 
+.heading {
+  margin-left: 29%;
+  margin-top: 5%;
+  background-color: #e2dede;
+  padding: 8px;
+  width: 100%;
+}
+
 .board-layout {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   margin: 24px;
   width: 100%;
 }
 
 .display-scores {
   margin-right: 3%;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  padding: 24px;
+  background-color: #fff;
 }
 
 .score-refresh {
@@ -20,6 +31,9 @@
   flex-direction: row;
   gap: 12px;
   margin-bottom: 3%;
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 6px;
 }
 
 .btn-refresh {
@@ -45,6 +59,15 @@
 
 .header-score {
   margin-bottom: 5%;
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.add-scores {
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  background-color: #fff;
+  padding: 24px;
 }
 
 .form-section {
@@ -67,5 +90,5 @@
 .show-scores {
   border: 1.5px solid #000;
   background-color: #fff;
-  width: 220px;
+  width: 240px;
 }

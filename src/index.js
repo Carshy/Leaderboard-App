@@ -1,7 +1,7 @@
 /* eslint-disable max-classes-per-file */
 
 import './style.css';
-import { createGame, createUserData, getUserEntry } from './modules/leaderboardApi.js';
+import { createUserData, getUserEntry } from './modules/leaderboardApi.js';
 
 // Displaying Scores
 const refreshBtn = document.getElementById('refresh-btn');
@@ -45,7 +45,7 @@ userDataSubmit.addEventListener('click', async () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    showScores();
+  showScores();
 });
 
 /* eslint-disable max-classes-per-file */
