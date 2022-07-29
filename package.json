@@ -4,7 +4,7 @@
   "description": "\"Learderboard App\" is a tool that helps you create and manage points, ratings, rankings, awards, and assigning virtual rewards and prizes. As a user, you can use your position on the leaderboard to assess your own performance or that of others.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "build": "webpack"
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Carshy/Leaderboard-App/issues"
   },
-  "homepage": "https://github.com/Carshy/Leaderboard-App#readme",
+  "homepage": "https://Carshy.github.io/Leaderboard-App",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
@@ -212,6 +212,7 @@
     "get-stream": "^5.2.0",
     "get-uri": "^3.0.2",
     "getpass": "^0.1.7",
+    "gh-pages": "^4.0.0",
     "glob": "^8.0.3",
     "glob-parent": "^5.1.2",
     "global-dirs": "^3.0.0",

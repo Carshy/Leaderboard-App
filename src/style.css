@@ -8,7 +8,13 @@
   margin-left: 29%;
   margin-top: 5%;
   padding: 8px;
-  width: 100%;
+}
+
+.heading h1 {
+  background-color: #e2dede;
+  width: 23%;
+  padding-left: 12px;
+  border-radius: 6px;
 }
 
 .board-layout {
@@ -35,6 +41,13 @@
   border-radius: 6px;
 }
 
+.score-refresh:hover {
+  background-color: #000;
+  cursor: pointer;
+  padding: 12px;
+  color: #fff;
+}
+
 .btn-refresh {
   width: 65px;
   height: 10%;
@@ -44,6 +57,12 @@
   cursor: pointer;
   background-color: #fff;
   outline: none;
+}
+
+.btn-refresh:hover {
+  border: 2px solid #e2dede;
+  box-shadow: 2px 5px;
+  padding: 6px;
 }
 
 #display-score {
@@ -61,6 +80,13 @@
   border: 1px solid grey;
   padding: 8px;
   border-radius: 6px;
+}
+
+.header-score:hover {
+  background-color: #000;
+  cursor: pointer;
+  padding: 12px;
+  color: #fff;
 }
 
 .add-scores {

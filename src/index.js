@@ -1,7 +1,7 @@
 /* eslint-disable max-classes-per-file */
 
 import './style.css';
-import { createUserData, getUserEntry } from './modules/leaderboardApi.js';
+import { createUserData, getUserEntry } from './modules/leaderboardApi';
 
 // Displaying Scores
 const refreshBtn = document.getElementById('refresh-btn');
